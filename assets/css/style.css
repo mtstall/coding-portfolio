@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .header {
     background-color: #ffb6c1;
 }
@@ -5,7 +9,6 @@
 .header h1{
     display: inline-block;
     font-size: 70px;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: lighter;
     border-left: 20px;
@@ -15,7 +18,6 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
 }
@@ -35,6 +37,7 @@
 .content {
     display: flex;
     flex-direction: row;
+    padding: 2.5% 0% 2.5% 0%;
 }
 
 .content a {
@@ -44,7 +47,7 @@
     position: relative;
 }
 
-.work-content {
+#work {
     display: flex;
     flex-direction: row;
     height: 300px;
@@ -54,6 +57,7 @@
     width: 20%;
     display: flex;
     flex-direction: column;
+    border-right: solid;
 }
 
 .content-header img {
@@ -63,7 +67,6 @@
 
 .content p {
     display: inline;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0% 2%;
 }
 
@@ -76,10 +79,8 @@
 }
 
 .content-header h2 {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     padding: 0px 10px;
-    border-right: solid;
 }
 
 .work-examples {
@@ -90,6 +91,7 @@
     justify-content: space-around;
     height: 300px;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 .work-examples p {
@@ -100,8 +102,25 @@
     font-family: 'Monaco', sans-serif;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-color: #ffb7bc;
-    background-color: rgb(134,135,184, 0.4);
+    border-color: rgb(134,135,184);
+    background-color: rgb(134,135,184);
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+    linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
+    linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
+}
+
+.work-examples a {
+    text-decoration: none;
+    color: white;
 }
 
 .contact-info {
@@ -111,11 +130,20 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    text-decoration: none;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .contact-info a {
     color: black;
+}
+
+.resume-link {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+footer h4 {
+    text-align: center;
 }
