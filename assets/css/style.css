@@ -3,7 +3,7 @@
 }
 
 .header {
-    background-color: #ffb6c1;
+    background-color: #bc949c;
 }
 
 .header h1{
@@ -12,6 +12,7 @@
     color: white;
     font-weight: lighter;
     border-left: 20px;
+    padding: 0px 2.5%;
 }
 
 .header nav {
@@ -34,6 +35,10 @@
     color: white;
 }
 
+.header a:hover {
+    text-shadow: rgb(90, 88, 88) 1px 0 7px;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -50,7 +55,7 @@
 #work {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 500px;
 }
 
 .content-header {
@@ -89,7 +94,6 @@
     flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-around;
-    height: 300px;
     flex-wrap: wrap;
     text-decoration: none;
 }
@@ -98,12 +102,13 @@
     border-style: solid;
     border-width: thick;
     width: 20%;
+    height: 100px;
     border-radius: 5%;
     font-family: 'Monaco', sans-serif;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-color: rgb(134,135,184);
-    background-color: rgb(134,135,184);
+    border-color: #8da389;
+    background-color: #8da389;
     background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
     linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
     linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
@@ -118,9 +123,21 @@
     linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
 }
 
+.work-examples p:hover {
+    box-shadow: inset 0px 8px 8px
+    #8da389, 0 0 15px #8da389;
+}
+
 .work-examples a {
     text-decoration: none;
     color: white;
+    font-size: x-large;
+}
+
+.work-examples #first-app {
+    width: 95%;
+    height: 150px;
+    text-align: center;
 }
 
 .contact-info {
@@ -136,6 +153,10 @@
 
 .contact-info a {
     color: black;
+}
+
+.contact-info p:hover, .resume-link p:hover {
+    text-shadow: rgb(134,135,184) 1px 0 7px;
 }
 
 .resume-link {
