@@ -4,6 +4,9 @@
 
 .header {
     background-color: #bc949c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header h1{
@@ -47,15 +50,7 @@
 
 .content a {
     text-decoration: underline;
-    color: black;
-    font-weight: bold;
     position: relative;
-}
-
-#work {
-    display: flex;
-    flex-direction: row;
-    height: 500px;
 }
 
 .content-header {
@@ -75,14 +70,6 @@
     padding: 0% 2%;
 }
 
-.content .category-header {
-    display: inline;
-}
-
-.category-header .content {
-    display: inline;
-}
-
 .content-header h2 {
     text-align: right;
     padding: 0px 10px;
@@ -93,50 +80,40 @@
     width: 80%;
     flex: 1 1 auto;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     text-decoration: none;
 }
 
-.work-examples p {
+.work-examples a {
     border-style: solid;
     border-width: thick;
-    width: 20%;
-    height: 100px;
-    border-radius: 5%;
-    font-family: 'Monaco', sans-serif;
+    width: 39%;
+    height: 20%;
     font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-color: #8da389;
-    background-color: #8da389;
-    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
-    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
-    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
-    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
-    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
-    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
-    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
-    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
-    linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
-    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
-    linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
-    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
-}
-
-.work-examples p:hover {
-    box-shadow: inset 0px 8px 8px
-    #8da389, 0 0 15px #8da389;
-}
-
-.work-examples a {
+    border-color: black;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: x-large;
+    margin: 0px 1%;
+}
+
+.work-examples img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-examples a:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.work-examples img:hover {
+    opacity: 0.7;
 }
 
 .work-examples #first-app {
-    width: 95%;
-    height: 150px;
+    width: 80%;
+    height: 50%;
     text-align: center;
 }
 
@@ -146,6 +123,7 @@
     flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: bold;
     text-decoration: underline;
@@ -159,12 +137,30 @@
     text-shadow: rgb(134,135,184) 1px 0 7px;
 }
 
-.resume-link {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-}
-
 footer h4 {
     text-align: center;
+}
+
+/*media queries for formatting on an ipad device*/
+@media screen and (max-width: 992px) {
+    /**/
+    .header {
+        flex-direction: column;
+    }
+
+    .header h1, nav {
+        text-align: center;
+    }
+  }
+
+/*media queries for formatting on a cell phone device*/
+@media screen and (max-width: 768px) {
+    .work-examples a {
+        width: 80%;
+    }
+
+    #work {
+        height: 845px;
+    }
+
 }
