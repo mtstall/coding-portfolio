@@ -1,7 +1,9 @@
+/*this code applies to the entire webpage*/
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*header section formatting*/
 .header {
     background-color: #bc949c;
     display: flex;
@@ -9,7 +11,8 @@
     justify-content: space-between;
 }
 
-.header h1{
+/*header title formatting*/
+.header h1 {
     display: inline-block;
     font-size: 70px;
     color: white;
@@ -18,6 +21,7 @@
     padding: 0px 2.5%;
 }
 
+/*header navigation formatting*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -26,6 +30,7 @@
     text-decoration: none;
 }
 
+/*formatting of li elements within nav section*/
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -33,26 +38,33 @@
     color: white;
 }
 
+/*formatting of a tags within header*/
 .header a {
+    display: inline-block;
+    margin-left: 25px;
     text-decoration: none;
     color: white;
 }
 
+/*pseudo class for a tags within header when hovering over them*/
 .header a:hover {
     text-shadow: rgb(90, 88, 88) 1px 0 7px;
 }
 
+/*formatting of each content section class*/
 .content {
     display: flex;
     flex-direction: row;
     padding: 2.5% 0% 2.5% 0%;
 }
 
+/*formatting of a tags within content sections*/
 .content a {
     text-decoration: underline;
     position: relative;
 }
 
+/*formatting of headers within each content section*/
 .content-header {
     width: 20%;
     display: flex;
@@ -60,27 +72,32 @@
     border-right: solid;
 }
 
+/*formatting of images within content-header class */
 .content-header img {
    width: 85%;
     margin-left: 20px;  
 }
 
+/*formatting of p tags within the content sections*/
 .content p {
     display: inline;
     padding: 0% 2%;
 }
 
+/*formatting of h2 tags within content-header classes*/
+.content-header h2 {
+    text-align: right;
+    padding: 0px 10px;
+}
+
+/*formatting of p tags wihtin the id about-me*/
 #about-me p {
     width: 60%;
     margin: 0% 6%;
     line-height: 200%;
 }
 
-.content-header h2 {
-    text-align: right;
-    padding: 0px 10px;
-}
-
+/*formatting of work examples*/
 .work-examples {
     display: flex;
     width: 80%;
@@ -91,6 +108,7 @@
     text-decoration: none;
 }
 
+/*formatting of a tags within work examples*/
 .work-examples a {
     border-style: solid;
     border-width: thick;
@@ -104,25 +122,30 @@
     margin: 0px 1%;
 }
 
+/*formatting of images within work examples*/
 .work-examples img {
     width: 100%;
     height: 100%;
 }
 
+/*pseudo class for a tags within work-examples when hovering over them*/
 .work-examples a:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/*pseudo class for images within work-examples when hovering over them*/
 .work-examples img:hover {
     opacity: 0.7;
 }
 
+/*formatting of first-app id within work-examples class*/
 .work-examples #first-app {
     width: 80%;
     height: 50%;
     text-align: center;
 }
 
+/*formatting of contact-info class*/
 .contact-info {
     display: flex;
     width: 80%;
@@ -135,21 +158,23 @@
     text-decoration: underline;
 }
 
+/*formatting of a tags within contact-info class*/
 .contact-info a {
     color: black;
 }
 
+/*pseudo class for p tags within contact-info when hovering over them*/
 .contact-info p:hover, .resume-link p:hover {
     text-shadow: rgb(134,135,184) 1px 0 7px;
 }
 
+/*formatting of h4 tags within footer section*/
 footer h4 {
     text-align: center;
 }
 
 /*media queries for formatting on an ipad device*/
 @media screen and (max-width: 992px) {
-    /**/
     .header {
         flex-direction: column;
     }
