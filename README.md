@@ -11,6 +11,9 @@ N/A
 
 Use this webpage to find out more about my coding background and see examples of work I've created.
 
+Link to deployed website: https://mtstall.github.io/coding-portfolio/
+<img src="./assets/images/coding-portfolio.png" alt="screenshot of deployed site"/>
+
 ## Credits
 
 N/A
