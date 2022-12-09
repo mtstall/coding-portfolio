@@ -2,7 +2,7 @@
 
 ## Description
 
-This purpose of this website is to showcase deployed applications I have created. This portfolio will be updated throughout my time in the UNC Coding Boot Camp course, and it will ultimately serve as a place that future employers can use to see examples of work I've created.
+The purpose of this website is to showcase deployed applications I have created. This portfolio will be updated throughout my time in the UNC Coding Boot Camp course, and it will ultimately serve as a place that future employers can use to see examples of work I've created.
 
 ## Installation
 N/A
